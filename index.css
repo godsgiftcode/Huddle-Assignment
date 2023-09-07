@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+
+}
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+
+    --headerFamily: 'Poppins', sans-serif;
+    --bodyFamily: 'Open Sans', sans-serif;
+
+    --HeaderFontWeight: 400, 600;
+    --bodyFontWeight: 400;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 86%;
+}
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+a{
+    color: white;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+h1{
+    line-height: 1.2;
+    font-size: 2.3rem;
+}
+
+h2{
+    line-height: 1.2;
+    font-size: 2rem;
+}
+
+body{
+    font-family: var(--bodyFamily);
+    line-height: 1.7;
+    color: white;
+    background: var(--violet);
+    
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ///////NAV */
+
+.background{
+    width: 54rem;
+     height: 45rem; 
+    z-index: -10;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    background: transparent;
+    width: 80vw;
+    height: 5rem;
+    font-family: var(--headerFamily);
+    z-index: 12;
+}
+nav span{
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-right: 0.2rem;
+}
+
+.nav_logo{
+    margin-top: 2rem;
+    
+}
+
+.fa-regular{
+    font-size: 2.2rem;
+}
+
+
+
+
+/* /////////////HEADER */
+
+header{
+    margin-top: 3rem;
+    font-family: var(--bodyFontWeight);
+    line-height: 1.7;
+    font-weight: var(--bodyFontWeight);
+}
+
+.header_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.header_right p {
+    font-size: 0.9rem;
+    padding: 2rem 0;
+
+}
+
+.header_right h1{
+    font-family: var(--headerFamily);
+}
+
+.header_right a{
+    font-family: var(--headerFamily);
+    border: 1px solid transparent;
+    background: white;
+    color: var(--violet);
+    padding: 0.7rem 3rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+    transition: all 400ms ease;
+}
+.header_right a:hover{
+    background: var(--SoftMagenta);
+}
+/* ////////////////FOOTER */
+
+footer{
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    
+    
+}
+
+.footer_container{
+    display: flex;
+    gap: 1.4rem;
+    justify-content: right;
+    
+}
+.footer_container a{
+    transition: all 400ms ease;
+    
+}
+
+.footer_container a:hover{
+    color: violet;
+}
+
+/* //////////////MEDIA QUERY(TABLETS) */
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+        
+    }
+
+    .background{
+        height: 25rem;
+        width: 37rem;
+    }
+
+    /* ///////////////////// */
+
+    header{
+        margin-top: 2rem;
+    }
+
+    .header_container{
+        gap: 2rem;   
+    }
+
+
+
+    .header_right p {
+        font-size: 1.3rem;
+        padding: 3rem 0;
+    
+    }
+
+    /* //////////// */
+    footer{
+        font-size: 2.5rem;
+        margin-top: 5rem;
+        
+        
+    }
+    
+    .footer_container{
+        display: flex;
+        gap: 1.4rem;
+        justify-content: right;
+        
+    }
+    .footer_container a{
+        transition: all 400ms ease;
+        
+    }
+}
+/* ////////////////////////////////// */
+
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+    nav{
+        background: transparent;
+        width: 0;
+        height: 5rem;
+        font-family: var(--headerFamily);
+        z-index: 12;
+    }
+   
+
+    .background{
+       height: 13rem;
+       width: 22rem;
+    }
+
+    .header_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        align-items: center;
+        text-align: center;
+    }
+    .header_right p {
+        font-size: 0.8rem;
+        
+        
+        padding: 2rem 0;
+    
+    }
+
+    .header_container h1{
+        font-size: 1.6rem;
+    }
+
+    .header_container p{
+        font-size: 0.9rem;
+    }
+
+    footer{
+        font-size: 2rem;
+        margin-top: 5rem;
+        
+    }
+
+    .footer_container{
+        justify-content: center;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
